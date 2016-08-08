@@ -1,0 +1,166 @@
+<html>
+<head>
+	<meta http-equiv="Content-Type" charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<link rel="stylesheet" href="./css/mainStyle.css" charset="utf-8">
+	<title>Trip in 2016</title>
+</head>
+
+<body>
+
+<!-- map style -->
+<style type="text/css">
+
+</style>
+
+<!-- header -->
+<div id="menu_bar">
+	
+</div>
+
+<!-- contents -->
+
+<div id="contents">
+	<!-- left column -->
+	<div id="left_wrapper">
+		<div id="date" class="item">
+			<p>
+				夏の温泉をコンセプトとして，涼しげな自然の中に温泉があるような場所を探してみた.
+			</p>
+			<p>
+				Date: 2016/08/15~08/19
+			</p>
+		</div>
+	
+		<div id="candidate">
+			
+			<div class="item location">
+				<div class="top_image">
+					<div class="title">
+						夏油(げとう)温泉(岩手県北上市)
+					</div>
+					<img src="http://mizuki.sakura.ne.jp/~geto/image/001.jpg?1470355200040" alt="夏油温泉イメージ">
+				</div>
+				<div class="link">
+					<a href="http://mizuki.sakura.ne.jp/~geto/onsen.html" target="_blank">夏油温泉ホームページ</a>
+				</div>
+				<iframe src="http://mizuki.sakura.ne.jp/~geto/onsen.html">
+					夏油温泉ホームページ
+				</iframe>
+				
+				<p>
+					自炊も可能.
+				</p>
+			</div>
+			
+			<div class="item location">
+				
+				<div class="top_image">
+					<div class="title">
+						新穂高温泉(岐阜県高山市)
+					</div>
+					<img src="https://media-cdn.tripadvisor.com/media/photo-o/08/71/4a/f7/caption.jpg" alt="新穂高温泉イメージ">
+				</div>
+				<div class="link">
+					<a href="http://shinzansou.com/ryoukin.html" target="_blank">深山荘ホームページ</a>
+				</div>
+				<iframe src="http://shinzansou.com/ryoukin.html">
+					深山荘ホームページ
+				</iframe>
+				
+			</div>
+			
+			<div class="item location">
+				
+				<div class="top_image">
+					<div class="title">
+						塩の湯温泉(栃木県那須塩原市)
+					</div>
+					<img src="https://media-cdn.tripadvisor.com/media/photo-w/01/31/13/11/caption.jpg" alt="	塩の湯温泉">
+				</div>
+				<div class="link">
+					<a href="http://www.myogaya.com/" target="_blank">明賀屋ホームページ</a>
+				</div>
+				<iframe src="http://www.myogaya.com/">
+					明賀屋ホームページ
+				</iframe>
+				
+			</div>
+			
+			<!-- template
+			<div class="item location">
+				
+				<div class="top_image">
+					<div class="title">
+						title
+					</div>
+					<img src="url" alt="alter text">
+				</div>
+				<div class="link">
+					<a href="url" target="_blank">home page link</a>
+				</div>
+				<iframe src="url">
+					home page
+				</iframe>
+				
+			</div>
+			-->
+		</div>
+		
+		<!-- footer -->
+	<div id="footer">
+		<div id="footer_logo_space">
+			<img src="./image/Fumipo_logo.png" width="100px" alt="fumipo logo">
+		</div>
+		<div id="footer_message">
+			<div class="list">
+				This is footer space
+			</div>
+			<div class="list">
+				Made by Fumipo
+			</div>
+		</div>
+	</div>
+
+	</div>
+
+	<!-- right column (map) -->
+	<div id="right_wrapper">
+		<div id="map"></div>
+	</div>
+	
+</div>
+
+
+
+
+</body>
+<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
+<script src="./js/jquery-2.2.0.min.js" charset="utf-8"></script>
+<script src="./js/d3.min.js" charset="utf-8"></script>
+
+<script type="text/javascript">
+//
+/* initialize map */
+//
+	(function(){
+		if (window.matchMedia('screen and (min-device-width: 375px) and (orientation : landscape)').matches){
+			var mapDOM=$("#map");
+			var map=new google.maps.Map(mapDOM[0],{
+				zoom: 5,
+				mapTypeId: google.maps.MapTypeId.ROADMAP,
+				center: new google.maps.LatLng(33.855050, 133.522465),
+				scaleControl: true
+			});
+		};
+	})()
+</script>
+<script type="text/javascript">
+	
+
+	window.onload=function(){
+		
+	}
+</script>
+
+</html>
